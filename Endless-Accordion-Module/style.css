@@ -1,0 +1,93 @@
+body.body {
+  background-color: #f3f5f6;
+}
+
+.accordion-wrapper {
+  background-color: white;
+  margin: 64px 130px;
+}
+
+.accordion-item {
+  border-bottom: 3px solid rgba(205, 214, 218, 0.25);
+}
+
+.accordion {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 52px 60px 34px;
+}
+
+.item-number {
+  font-family: "Asap", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0.25px;
+  color: rgba(60, 60, 67, 0.5);
+}
+
+.accordion-title {
+  font-family: "Asap", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  width: -webkit-fill-available;
+  padding-left: 20px;
+}
+
+.accordion:hover,
+button.accordion-title:hover {
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  font-family: "Asap", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: rgba(60, 60, 67, 0.85);
+  padding: 0 130px 52px;
+}
+
+/* Button */
+button#add-new-acc-item {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 40px;
+  font-size: 17px;
+  border: none;
+  color: white;
+  background: black;
+}
+button#add-new-acc-item:hover {
+  background: rgb(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 800px) {
+  .content {
+    font-size: 18px;
+    line-height: 140%;
+  }
+  .accordion-title {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .item-number {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
